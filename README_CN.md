@@ -115,13 +115,13 @@ Mac4 的差异基因火山图与 GO 气泡图证实，该亚群在老年皮肤�
 2. **存放路径配置**：下载完成后，请将 10x Genomics 的输出文件（`matrix.mtx.gz`, `features.tsv.gz`, `barcodes.tsv.gz`）按样本存放于 `data/` 目录下：
    ```text
    data/
-   ├── 8wk_1/
+   ├── GSM9834280_8wk_ctrl/
    │   ├── matrix.mtx.gz
    │   ├── features.tsv.gz
    │   └── barcodes.tsv.gz
-   ├── 26wk_1/
+   ├── GSM9834281_8wk_Apo/
    │   └── ...
-   └── 52wk_1/
+   └── GSM9834282_26wk_ctrl/
        └── ...
 
 ### 环境配置
