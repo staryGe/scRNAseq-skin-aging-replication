@@ -107,6 +107,23 @@ Mac4 的差异基因火山图与 GO 气泡图证实，该亚群在老年皮肤�
 
 ## 🚀 快速开始与使用指南
 
+###  数据准备 (Data Preparation)
+
+本项目使用的原始单细胞转录组数据来源于 NCBI GEO 数据库：
+
+1. **原始数据下载**：访问 GEO 数据集 [GSE336400](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE336400) 并下载补充文件（Supplementary files）。
+2. **存放路径配置**：下载完成后，请将 10x Genomics 的输出文件（`matrix.mtx.gz`, `features.tsv.gz`, `barcodes.tsv.gz`）按样本存放于 `data/` 目录下：
+   ```text
+   data/
+   ├── 8wk_1/
+   │   ├── matrix.mtx.gz
+   │   ├── features.tsv.gz
+   │   └── barcodes.tsv.gz
+   ├── 26wk_1/
+   │   └── ...
+   └── 52wk_1/
+       └── ...
+
 ### 环境配置
 
 请确保安装了 R (>= 4.2) 及以下核心依赖包：
