@@ -107,6 +107,23 @@ The Mac4 DEG volcano plot and GO dotplot confirm that this subcluster primarily 
 
 ## 🚀 Quick Start & Usage
 
+###  Data Preparation
+
+The raw single-cell RNA-seq datasets used in this project can be obtained from the NCBI GEO database:
+
+1. **Download Raw Data**: Visit the GEO dataset [GSE336400](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE336400) and download the supplementary files.
+
+2. **Directory Structure**: Place and organize the downloaded 10x Genomics output files (`matrix.mtx.gz`, `features.tsv.gz`, `barcodes.tsv.gz`) into the `data/` directory:
+   ```text
+   data/
+   ├── 8wk_1/
+   │   ├── matrix.mtx.gz
+   │   ├── features.tsv.gz
+   │   └── barcodes.tsv.gz
+   ├── 26wk_1/
+   │   └── ...
+   └── 52wk_1/
+       └── ...
 ### Environment Setup
 
 Ensure R (>= 4.2) and the following core dependency packages are installed:
@@ -115,6 +132,7 @@ Ensure R (>= 4.2) and the following core dependency packages are installed:
 install.packages(c("tidyverse", "ggrepel"))
 BiocManager::install(c("Seurat", "harmony", "clusterProfiler", "org.Mm.eg.db"))
 ```
+
 
 
 
