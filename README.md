@@ -116,13 +116,13 @@ The raw single-cell RNA-seq datasets used in this project can be obtained from t
 2. **Directory Structure**: Place and organize the downloaded 10x Genomics output files (`matrix.mtx.gz`, `features.tsv.gz`, `barcodes.tsv.gz`) into the `data/` directory:
    ```text
    data/
-   ├── 8wk_1/
+   ├── GSM9834280_8wk_ctrl/
    │   ├── matrix.mtx.gz
    │   ├── features.tsv.gz
    │   └── barcodes.tsv.gz
-   ├── 26wk_1/
+   ├── GSM9834281_8wk_Apo/
    │   └── ...
-   └── 52wk_1/
+   └── GSM9834282_26wk_ctrl/
        └── ...
 ### Environment Setup
 
